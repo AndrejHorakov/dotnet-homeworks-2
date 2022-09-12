@@ -56,5 +56,14 @@ namespace Hw1Tests
             //assert
             Assert.Equal(double.NaN, actual);
         }
+
+        [Fact]
+        public void TestDefaultCalculatorOperation()
+        {
+            var args = new[] { "15", "_", "5" };
+            
+            Assert.Throws<ArgumentOutOfRangeException>(() =>
+                Parser.ParseCalcArguments(args, out _, out _, out _));
+        }
     }
 }
