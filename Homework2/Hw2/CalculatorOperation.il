@@ -7,5 +7,5 @@
   .field public static literal valuetype Hw2.CalculatorOperation Minus = int8(1)
   .field public static literal valuetype Hw2.CalculatorOperation Multiply = int8(2)
   .field public static literal valuetype Hw2.CalculatorOperation Divide = int8(3)
-  .field public static literal valuetype Hw2.CalculatorOperation Undefined = int8(4)
+  .field public static literal valuetype Hw2.CalculatorOperation Undefined = int8(4) 
 }

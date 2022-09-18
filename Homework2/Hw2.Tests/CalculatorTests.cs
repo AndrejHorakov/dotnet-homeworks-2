@@ -1,7 +1,8 @@
+using System;
 using Hw2;
 using Xunit;
 
-namespace Hw2Tests
+namespace Hw1Tests
 {
     public class CalculatorTests
     {
@@ -12,31 +13,57 @@ namespace Hw2Tests
         [InlineData(15, 5, CalculatorOperation.Divide, 3)]
         public void TestAllOperations(int value1, int value2, CalculatorOperation operation, int expectedValue)
         {
-            throw new NotImplementedException();
+            //act
+            var actual = Calculator.Calculate(value1, operation, value2);
+
+            //assert
+            Assert.Equal(expectedValue, actual);
         }
         
         [Fact]
         public void TestInvalidOperation()
         {
-            throw new NotImplementedException();
+            //assert
+            Assert.Throws<ArgumentOutOfRangeException>(() => Calculator.Calculate(0, CalculatorOperation.Undefined, 10));
         }
 
         [Fact]
         public void TestDividingNonZeroByZero()
         {
-            throw new NotImplementedException();
+            //act
+            var actual = Calculator.Calculate(0, CalculatorOperation.Divide, 10);
+
+            //assert
+            Assert.Equal(0, actual);
         }
 
         [Fact]
         public void TestDividingZeroByNonZero()
         {
-            throw new NotImplementedException();
+            //act
+            var actual = Calculator.Calculate(10, CalculatorOperation.Divide, 0);
+
+            //assert
+            Assert.Equal(double.PositiveInfinity, actual);
         }
         
         [Fact]
         public void TestDividingZeroByZero()
         {
-            throw new NotImplementedException();
+            //act
+            var actual = Calculator.Calculate(0, CalculatorOperation.Divide, 0);
+
+            //assert
+            Assert.Equal(double.NaN, actual);
+        }
+
+        [Fact]
+        public void TestDefaultCalculatorOperation()
+        {
+            var args = new[] { "15", "_", "5" };
+            
+            Assert.Throws<ArgumentOutOfRangeException>(() =>
+                Parser.ParseCalcArguments(args, out _, out _, out _));
         }
     }
 }
