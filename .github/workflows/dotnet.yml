@@ -36,4 +36,4 @@ jobs:
         if: success() || failure()
         with:
           name: test-results
-          path: Homework1/TestsCoverage.xml
+          path: Homework*/*.xml
