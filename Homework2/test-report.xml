@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="18" TotalStatements="18" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2022.2.2">
+  <FileIndices>
+    <File Index="6" Name="D:\dotNetHW\dotnet-homeworks-2\Homework2\Hw2.Tests\obj\Debug\net6.0\Hw2Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="C1BC552C2455D6BA0F9A6FC4D2F9ECE2FE512EFE8AE3879A74855211C4111375" />
+    <File Index="5" Name="D:\dotNetHW\dotnet-homeworks-2\Homework2\Hw2.Tests\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="9203CF07D36B1AA135DA4A5F86286F34432156CBAF6518C2909849EB7D577381" />
+    <File Index="4" Name="D:\dotNetHW\dotnet-homeworks-2\Homework2\Hw2.Tests\obj\Debug\net6.0\Hw2Tests.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
+    <File Index="3" Name="C:\Users\andre\.nuget\packages\microsoft.net.test.sdk\17.1.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
+    <File Index="2" Name="D:\dotNetHW\dotnet-homeworks-2\Homework2\Hw2.Tests\ParserTests.cs" ChecksumAlgorithm="SHA256" Checksum="FF765FAB01F34080126F7589E279093C7641E6F61BCB5A741C411FE619EDCB4B" />
+    <File Index="1" Name="D:\dotNetHW\dotnet-homeworks-2\Homework2\Hw2.Tests\CalculatorTests.cs" ChecksumAlgorithm="SHA256" Checksum="E124EBC7063D2A30A2BD418BD266CBACC6B22B6B6883FF02176A1BF3E039E8E8" />
+  </FileIndices>
+  <Assembly Name="Hw2Tests" CoveredStatements="18" TotalStatements="18" CoveragePercent="100">
+    <Namespace Name="Hw2Tests" CoveredStatements="18" TotalStatements="18" CoveragePercent="100">
+      <Type Name="CalculatorTests" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+        <Method Name="TestAllOperations(System.Int32,System.Int32,Hw2.CalculatorOperation,System.Int32):System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="1" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="15" Column="13" EndLine="15" EndColumn="49" Covered="True" />
+        </Method>
+        <Method Name="TestDividingNonZeroByZero():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="1" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="27" Column="13" EndLine="27" EndColumn="49" Covered="True" />
+        </Method>
+        <Method Name="TestDividingZeroByNonZero():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="1" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="33" Column="13" EndLine="33" EndColumn="49" Covered="True" />
+        </Method>
+        <Method Name="TestDividingZeroByZero():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="1" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="39" Column="13" EndLine="39" EndColumn="49" Covered="True" />
+        </Method>
+        <Method Name="TestInvalidOperation():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="1" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="21" Column="13" EndLine="21" EndColumn="49" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ParserTests" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+        <Method Name="TestCorrectOperations(System.String,Hw2.CalculatorOperation):System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="2" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="15" Column="13" EndLine="15" EndColumn="49" Covered="True" />
+        </Method>
+        <Method Name="TestParserWrongLength():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="2" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="36" Column="13" EndLine="36" EndColumn="49" Covered="True" />
+        </Method>
+        <Method Name="TestParserWrongOperation():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="2" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="30" Column="13" EndLine="30" EndColumn="49" Covered="True" />
+        </Method>
+        <Method Name="TestParserWrongValues(System.String,System.String,System.String):System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="2" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
+          <Statement FileIndex="2" Line="24" Column="13" EndLine="24" EndColumn="49" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>
