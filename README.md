@@ -1,11 +1,7 @@
 # Домашняя работа для третьего учебного семестра (2 год обучения)
 
 ![.NET](https://github.com/<AndrejHorakov>/dotnet-homeworks-2/actions/workflows/dotnet.yml/badge.svg)
-<<<<<<< HEAD
-[![codecov](https://codecov.io/gh/max-arshinov/dotnet-homeworks-2/branch/master/graph/badge.svg?token={token})](https://codecov.io/gh/max-arshinov/dotnet-homeworks-2)
-=======
-[![codecov](https://codecov.io/gh/max-arshinov/dotnet-homeworks-2/branch/master/graph/badge.svg?token={1f79daec-03c8-405f-bfd8-ef2190668be4})](https://codecov.io/gh/max-arshinov/dotnet-homeworks-2)
->>>>>>> 3138edd99bede0d1d6fa0e81a82a07514f3c42c1
+[![codecov](https://codecov.io/gh/max-arshinov/dotnet-homeworks-2/branch/master/graph/badge.svg?token={{1f79daec-03c8-405f-bfd8-ef2190668be4}})(https://codecov.io/gh/AndrejHorakov/dotnet-homeworks-2)
 
 ## Как устроены Actions
 1. ***build***: *Проверка: собирается ли проект.*
