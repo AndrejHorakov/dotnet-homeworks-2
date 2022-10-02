@@ -37,4 +37,3 @@ jobs:
         with:
           name: test-results
           path: Homework*/*.xml
-          path: Homework1/TestsCoverage.xml
