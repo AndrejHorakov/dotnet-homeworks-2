@@ -6,6 +6,7 @@ namespace Hw3;
 
 public class SingleInitializationSingleton
 {
+    // Lazy initialization
     private static Lazy<SingleInitializationSingleton> _singleton = 
         new Lazy<SingleInitializationSingleton>(() => new SingleInitializationSingleton());
     
