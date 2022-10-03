@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "actions", "actions", "{82BA
 		.github\coverlet.runsettings = .github\coverlet.runsettings
 	EndProjectSection
 EndProject
+<<<<<<< HEAD
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hw3", "hw3", "{78F13A34-FDFB-4991-AE29-7EB1298599BD}"
 	ProjectSection(SolutionItems) = preProject
 		Homework3\README.md = Homework3\README.md
@@ -24,12 +25,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw3.Mutex", "Homework3\Hw3.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw3", "Homework3\Hw3\Hw3.csproj", "{7EF16FA1-6CD2-4CDF-BE98-0C922B21CD28}"
 EndProject
+=======
+>>>>>>> master
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{8474FA7C-94A1-43A8-8B85-720B4BB6D796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8474FA7C-94A1-43A8-8B85-720B4BB6D796}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8474FA7C-94A1-43A8-8B85-720B4BB6D796}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,5 +51,19 @@ Global
 		{8474FA7C-94A1-43A8-8B85-720B4BB6D796} = {78F13A34-FDFB-4991-AE29-7EB1298599BD}
 		{E1370610-52EF-4828-ADC7-8A41F2F2044B} = {78F13A34-FDFB-4991-AE29-7EB1298599BD}
 		{7EF16FA1-6CD2-4CDF-BE98-0C922B21CD28} = {78F13A34-FDFB-4991-AE29-7EB1298599BD}
+=======
+		{4C0DB98A-6B41-4E8E-9558-1346F0CC64C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0DB98A-6B41-4E8E-9558-1346F0CC64C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0DB98A-6B41-4E8E-9558-1346F0CC64C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0DB98A-6B41-4E8E-9558-1346F0CC64C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7338C0-6535-4E98-894D-57AC5EF8E1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7338C0-6535-4E98-894D-57AC5EF8E1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7338C0-6535-4E98-894D-57AC5EF8E1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7338C0-6535-4E98-894D-57AC5EF8E1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C0DB98A-6B41-4E8E-9558-1346F0CC64C7} = {489B9530-1E81-44F1-B026-B42879A56CF4}
+		{2F7338C0-6535-4E98-894D-57AC5EF8E1C4} = {489B9530-1E81-44F1-B026-B42879A56CF4}
+>>>>>>> master
 	EndGlobalSection
 EndGlobal

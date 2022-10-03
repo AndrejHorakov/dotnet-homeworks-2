@@ -12,5 +12,9 @@ jobs:
       with:
         artifact: test-results            # artifact name
         name: test-report                  # Name of the check run which will be created
+<<<<<<< HEAD
         path: 'Homework*/Hw*.Tests/TestResults/*.trx'                     # Path to test results (inside artifact .zip)
+=======
+        path: 'HomeWork*/*.xml'                     # Path to test results (inside artifact .zip)
+>>>>>>> master
         reporter: dotnet-trx              # Format of test results

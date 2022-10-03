@@ -36,4 +36,8 @@ jobs:
         if: success() || failure()
         with:
           name: test-results
+<<<<<<< HEAD
           path: 'Homework*/Hw*.Tests/TestResults/*.trx'
+=======
+          path: Homework*/*.xml
+>>>>>>> master
