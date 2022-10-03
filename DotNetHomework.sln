@@ -22,6 +22,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw3.Mutex", "Homework3\Hw3.Mutex\Hw3.Mutex.csproj", "{E1370610-52EF-4828-ADC7-8A41F2F2044B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw3", "Homework3\Hw3\Hw3.csproj", "{1DB0318D-810C-4DA5-AE2E-8F5508BEFFA2}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hw2", "Homework2\Hw2\Hw2.ilproj", "{8D947011-20CB-4AF8-8233-05990E6FC5BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw2Tests", "Homework2\Hw2.Tests\Hw2Tests.csproj", "{F246DB0B-C0E2-4178-8D66-1DD7F936F5BB}"
@@ -52,24 +53,5 @@ Global
     GlobalSection(NestedProjects) = preSolution
         {8474FA7C-94A1-43A8-8B85-720B4BB6D796} = {78F13A34-FDFB-4991-AE29-7EB1298599BD}
         {E1370610-52EF-4828-ADC7-8A41F2F2044B} = {78F13A34-FDFB-4991-AE29-7EB1298599BD}
-        {1DB0318D-810C-4DA5-AE2E-8F5508BEFFA2} = {78F13A34-FDFB-4991-AE29-7EB1298599BD}
-        {8D947011-20CB-4AF8-8233-05990E6FC5BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-        {8D947011-20CB-4AF8-8233-05990E6FC5BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-        {8D947011-20CB-4AF8-8233-05990E6FC5BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-        {8D947011-20CB-4AF8-8233-05990E6FC5BA}.Release|Any CPU.Build.0 = Release|Any CPU
-        {F246DB0B-C0E2-4178-8D66-1DD7F936F5BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-        {F246DB0B-C0E2-4178-8D66-1DD7F936F5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-        {F246DB0B-C0E2-4178-8D66-1DD7F936F5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-        {F246DB0B-C0E2-4178-8D66-1DD7F936F5BB}.Release|Any CPU.Build.0 = Release|Any CPU
-        {0A2F6246-5660-4DF6-91BC-446CA8160DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-        {0A2F6246-5660-4DF6-91BC-446CA8160DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-        {0A2F6246-5660-4DF6-91BC-446CA8160DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-        {0A2F6246-5660-4DF6-91BC-446CA8160DC3}.Release|Any CPU.Build.0 = Release|Any CPU
-        {DB46EDFF-7E61-4904-A28E-90006495784E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-        {DB46EDFF-7E61-4904-A28E-90006495784E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-        {DB46EDFF-7E61-4904-A28E-90006495784E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-        {DB46EDFF-7E61-4904-A28E-90006495784E}.Release|Any CPU.Build.0 = Release|Any CPU
-    EndGlobalSection
-    GlobalSection(NestedProjects) = preSolution
     EndGlobalSection
 EndGlobal
