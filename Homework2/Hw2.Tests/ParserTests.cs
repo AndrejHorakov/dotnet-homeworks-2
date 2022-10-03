@@ -2,7 +2,7 @@ using System;
 using Hw2;
 using Xunit;
 
-namespace Hw1Tests
+namespace Hw2Tests
 {
     public class ParserTests
     {

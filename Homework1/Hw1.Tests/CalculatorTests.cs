@@ -1,8 +1,8 @@
 using System;
-using Hw2;
+using Hw1;
 using Xunit;
 
-namespace Hw2Tests
+namespace Hw1Tests
 {
     public class CalculatorTests
     {
@@ -19,7 +19,7 @@ namespace Hw2Tests
             //assert
             Assert.Equal(expectedValue, actual);
         }
-
+        
         [Fact]
         public void TestInvalidOperation()
         {
@@ -46,7 +46,7 @@ namespace Hw2Tests
             //assert
             Assert.Equal(double.PositiveInfinity, actual);
         }
-
+        
         [Fact]
         public void TestDividingZeroByZero()
         {
@@ -55,15 +55,6 @@ namespace Hw2Tests
 
             //assert
             Assert.Equal(double.NaN, actual);
-        }
-
-        [Fact]
-        public void TestDefaultCalculatorOperation()
-        {
-            var args = new[] { "15", "_", "5" };
-
-            Assert.Throws<ArgumentOutOfRangeException>(() =>
-                Parser.ParseCalcArguments(args, out _, out _, out _));
         }
     }
 }
