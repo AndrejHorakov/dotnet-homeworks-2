@@ -8,7 +8,6 @@
       float64 value2
     ) cil managed
     {
-    //fix conflict
         .maxstack 4
         ldarg.0
         ldarg.2
