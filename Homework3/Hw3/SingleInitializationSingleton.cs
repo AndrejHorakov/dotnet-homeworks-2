@@ -7,7 +7,7 @@ namespace Hw3;
 public class SingleInitializationSingleton
 {
     private static Lazy<SingleInitializationSingleton> _singleton = 
-        new(() => new SingleInitializationSingleton());
+        new Lazy<SingleInitializationSingleton>(() => new SingleInitializationSingleton());
     
     private static readonly object Locker = new();
 
@@ -41,7 +41,9 @@ public class SingleInitializationSingleton
     public static void Initialize(int delay)
     {
         if (_isInitialized)
+        {
             throw new InvalidOperationException();
+        }
         lock (Locker)
         {
             if (!_isInitialized)
