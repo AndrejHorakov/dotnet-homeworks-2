@@ -1,17 +1,27 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{ACFCEFF7-8C3B-4D05-8080-DD19A6E07873}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-	EndProjectSection
+				ProjectSection(SolutionItems) = preProject
+								README.md = README.md
+				EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "actions", "actions", "{82BA388F-4AE2-43A2-965A-AC2092BF26F3}"
-	ProjectSection(SolutionItems) = preProject
-		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
-		.github\workflows\test-reporter.yml = .github\workflows\test-reporter.yml
-		.github\workflows\Plagiarism_detector.yml = .github\workflows\Plagiarism_detector.yml
-		.github\coverlet.runsettings = .github\coverlet.runsettings
-	EndProjectSection
+				ProjectSection(SolutionItems) = preProject
+								.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+								.github\workflows\test-reporter.yml = .github\workflows\test-reporter.yml
+								.github\workflows\Plagiarism_detector.yml = .github\workflows\Plagiarism_detector.yml
+								.github\coverlet.runsettings = .github\coverlet.runsettings
+				EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hw3", "hw3", "{78F13A34-FDFB-4991-AE29-7EB1298599BD}"
+				ProjectSection(SolutionItems) = preProject
+								Homework3\README.md = Homework3\README.md
+				EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw3.Tests", "Homework3\Hw3.Tests\Hw3.Tests.csproj", "{8474FA7C-94A1-43A8-8B85-720B4BB6D796}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw3.Mutex", "Homework3\Hw3.Mutex\Hw3.Mutex.csproj", "{E1370610-52EF-4828-ADC7-8A41F2F2044B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw3", "Homework3\Hw3\Hw3.csproj", "{1DB0318D-810C-4DA5-AE2E-8F5508BEFFA2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework4", "Homework4", "{7E7C3A19-9AD4-48AE-AABE-6B1BA46F7B2A}"
 	ProjectSection(SolutionItems) = preProject
