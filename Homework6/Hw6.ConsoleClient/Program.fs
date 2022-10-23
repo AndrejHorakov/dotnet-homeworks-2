@@ -8,10 +8,11 @@ open System.Runtime.InteropServices
 open System.Threading.Tasks
 open Microsoft.FSharp.Control
 
+[<ExcludeFromCodeCoverage>]
 let getAsyncQuery (client: HttpClient) (args: String[]) =
     async {
         let uri = $"https://localhost:5001/calculate?value1={args[0]}&operation={args[1]}&value2={args[2]}"
-        //Task.Delay(2000)
+        Task.Delay(2000)
         let! response = client.GetAsync(uri) |>Async.AwaitTask 
         return response.Content.ReadAsStringAsync() |> Async.AwaitTask |> Async.RunSynchronously
     }
