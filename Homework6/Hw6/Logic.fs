@@ -16,6 +16,7 @@ type CalcVals =
 [<ExcludeFromCodeCoverage>]
 let matcher (val1, operation, val2) = Calculator.calculate val1 operation val2
 
+[<ExcludeFromCodeCoverage>]
 let reWriteResults (mess, args : string[]): Result<'a, string> =
     match mess with
     | Error Message.WrongArgFormatOperation -> Error $"Could not parse value '{args[1]}'"
