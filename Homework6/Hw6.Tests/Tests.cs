@@ -75,7 +75,7 @@ namespace Hw6Tests
         [Fact]
         public async Task TestParserDividingByZero() =>
             await RunTest("15.6", "0", "Divide", "DivideByZero", HttpStatusCode.OK, true);
-
+        
         private async Task RunTest(string value1, string value2, string operation, string expectedValueOrError,
             HttpStatusCode statusCode, bool isDividingByZero = false)
         {
@@ -94,6 +94,37 @@ namespace Hw6Tests
                                      decimal.Parse(result, CultureInfo.CurrentCulture)) < Epsilon);
             else
                 Assert.Contains(expectedValueOrError, result);
+        }
+        [Fact]
+        public async Task TestNotFoundPage()
+        {
+            //arrange
+            var url = "/Somebody";
+            
+            //act
+            var client = _factory.CreateClient();
+            var response = await client.GetAsync(url);
+            var result = await response.Content.ReadAsStringAsync();
+            
+            //assert
+            Assert.True(response.StatusCode == HttpStatusCode.NotFound);
+            Assert.Contains("Not Found", result);
+        }
+        
+        [Fact]
+        public async Task TestNotSupportedBindQueryString()
+        {
+            //arrange
+            var url = "/calculate?aavl=22px&operator=+&valuue2=56";
+            
+            //act
+            var client = _factory.CreateClient();
+            var response = await client.GetAsync(url);
+            var result = await response.Content.ReadAsStringAsync();
+            
+            //assert
+            Assert.True(response.StatusCode == HttpStatusCode.BadRequest);
+            Assert.Contains("Missing value for required property value1.", result);
         }
     }
 }
