@@ -13,6 +13,7 @@ type CalcVals =
         value2:string
     }
 
+[<ExcludeFromCodeCoverage>]
 let matcher (val1, operation, val2) = Calculator.calculate val1 operation val2
 
 let reWriteResults (mess, args : string[]): Result<'a, string> =
