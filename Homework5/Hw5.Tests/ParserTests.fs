@@ -81,11 +81,11 @@ let ``values parsed correctly`` (value1, operation, value2, expectedValue) =
     | Error _ -> raise (InvalidOperationException())
         
 [<Theory>]
-[<InlineData("f", "+", "3")>]
-[<InlineData("3", "+", "f")>]
-[<InlineData("a", "+", "f")>]
-[<InlineData("a", ".", "f")>]
-let ``Incorrect values return Error`` (value1, operation, value2) =
+[<InlineData("f", "+", "3", Message.WrongArg1Format)>]
+[<InlineData("3", "+", "f", Message.WrongArg2Format)>]
+[<InlineData("a", "+", "f", Message.WrongArg1Format)>]
+[<InlineData("a", ".", "f", Message.WrongArg1Format)>]
+let ``Incorrect values return Error`` (value1, operation, value2, message) =
     //arrange
     let args = [|value1;operation;value2|]
     
@@ -95,7 +95,7 @@ let ``Incorrect values return Error`` (value1, operation, value2) =
     //assert
     match result with
     | Ok _ -> raise (ArgumentException())
-    | Error resultError -> Assert.Equal(resultError, Message.WrongArgFormat)
+    | Error resultError -> Assert.Equal(resultError, message)
     
 [<Fact>]
 let ``Incorrect operations return Error`` () =

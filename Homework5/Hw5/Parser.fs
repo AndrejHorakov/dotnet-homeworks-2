@@ -12,18 +12,24 @@ let isArgLengthSupported (args:string[]): Result<'a,'b> =
 [<System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage>]
 let inline isOperationSupported (arg1, operation, arg2): Result<('a * CalculatorOperation * 'b), Message> =
     match operation with
-    | "+" -> Ok (arg1, CalculatorOperation.Plus, arg2)
-    | "-" -> Ok (arg1, CalculatorOperation.Minus, arg2)
-    | "*" -> Ok (arg1, CalculatorOperation.Multiply, arg2)
-    | "/" -> Ok (arg1, CalculatorOperation.Divide, arg2)
+
+    | "+"  -> Ok (arg1, CalculatorOperation.Plus, arg2)
+    |"Plus" -> Ok (arg1, CalculatorOperation.Plus, arg2)
+    | "-" |"Minus" -> Ok (arg1, CalculatorOperation.Minus, arg2)
+    | "*" |"Multiply" -> Ok (arg1, CalculatorOperation.Multiply, arg2)
+    | "/" |"Divide" -> Ok (arg1, CalculatorOperation.Divide, arg2)
     | _ -> Error Message.WrongArgFormatOperation
 
 let parseArgs (args: string[]): Result<('a * CalculatorOperation * 'b), Message> =
     let val1Bool, val1 = Double.TryParse(args[0], NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture)
     let val2Bool, val2 = Double.TryParse(args[2], NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture)
-    match val1Bool && val2Bool with
-    | true -> isOperationSupported(val1, args[1], val2)
-    | false -> Error Message.WrongArgFormat
+
+    match val1Bool with
+    | true ->
+        match val2Bool with
+        | true -> isOperationSupported(val1, args[1], val2)
+        | false -> Error Message.WrongArg2Format
+    | false -> Error Message.WrongArg1Format
 
 [<System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage>]
 let inline isDividingByZero (arg1, operation, arg2): Result<('a * CalculatorOperation * 'b), Message> =
