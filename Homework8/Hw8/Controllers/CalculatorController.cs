@@ -23,13 +23,13 @@ public class CalculatorController : Controller
                 Operation.Plus => Ok(calculator.Plus(arg1, arg2)),
                 Operation.Minus => Ok(calculator.Minus(arg1, arg2)),
                 Operation.Multiply => Ok(calculator.Multiply(arg1, arg2)),
-                Operation.Divide => Ok(calculator.Divide(arg1, arg2))
+                _ => Ok(calculator.Divide(arg1, arg2))
             };
         return occasion switch
         {
             Event.BadArgument => BadRequest(Messages.InvalidNumberMessage),
             Event.BadOperation => BadRequest(Messages.InvalidOperationMessage),
-            Event.DividingByZero => BadRequest(Messages.DivisionByZeroMessage)
+            _ => BadRequest(Messages.DivisionByZeroMessage)
         };
     }
     
