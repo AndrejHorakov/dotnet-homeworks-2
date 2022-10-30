@@ -49,7 +49,7 @@ public static class HtmlHelperExtensions
             var builder = new StringBuilder();
             builder.Append($"<select value=\"{value}\">");
             foreach (var field in Enum.GetValues(prop.PropertyType))
-                builder.Append("<option>" + field + "</option>");
+                builder.Append($"<option>{field}</option>");
             builder.Append("</select>");
             return builder.ToString();
         }
