@@ -33,6 +33,7 @@ public class IntegrationTests: IClassFixture<WebApplicationFactory<Program>>
     [InlineData("1000", Operation.Minus, "b",  Messages.InvalidNumberMessage)]
     [InlineData("63", Operation.Invalid, "3", Messages.InvalidOperationMessage)]
     [InlineData("63", Operation.Divide, "0", Messages.DivisionByZeroMessage)]
+    [InlineData("boba", Operation.Divide, "0", Messages.InvalidNumberMessage)]
     public async Task Calculate_IncorrectArguments_ExceptionStringReturned(string val1, Operation operation, string val2, string expected)
     {
         var response = await _client.GetAsync($"{_url}/Calculator/Calculate?val1={val1}&operation={operation}&val2={val2}");
@@ -42,10 +43,22 @@ public class IntegrationTests: IClassFixture<WebApplicationFactory<Program>>
     
     [Theory]
     [InlineData("1", "qwerty", "4", Messages.InvalidOperationMessage)]
+    [InlineData("5", "Dev", "8", Messages.InvalidOperationMessage)]
+    [InlineData("rtt", "Divide", "9", Messages.InvalidNumberMessage)]
+    [InlineData("6", "+", "16", Messages.InvalidOperationMessage)]
     public async Task Calculate_UnavailableOperation_InvalidOperationMessageReturned(string val1, string operation, string val2, string expected)
     {
         var response = await _client.GetAsync($"{_url}/Calculator/Calculate?val1={val1}&operation={operation}&val2={val2}");
         var actual = await response.Content.ReadAsStringAsync();
         Assert.Equal(expected, actual);
+    }
+    
+    [Fact]
+    public async Task TestDividingZeroByZero()
+    {
+        //act
+        var response = await _client.GetAsync($"{_url}/Calculator/Calculate?val1=0&operation=Divide&val2=0");
+        var actual = await response.Content.ReadAsStringAsync();
+        Assert.Equal(Messages.DivisionByZeroMessage, actual);
     }
 }
