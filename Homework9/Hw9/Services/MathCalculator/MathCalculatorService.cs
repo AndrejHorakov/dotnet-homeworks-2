@@ -26,7 +26,6 @@ public class MathCalculatorService : IMathCalculatorService
                 new CalculationMathExpressionResultDto(visitor.Calculate(preRes as ConstantExpression).Result));
         }
         result.Start();
-        //await Task.Delay(1000);
         return await result;
     }
 

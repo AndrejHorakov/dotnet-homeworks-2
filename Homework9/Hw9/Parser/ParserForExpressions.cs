@@ -95,9 +95,7 @@ public static class ParserForExpressions
 
             if (str[^1] == ')')
                 if (!ParseBracket(str, list, false).IsSuccess)
-                {
                     return ParseBracket(str, list, false);
-                }
                 else continue;
 
             if (!char.IsDigit(str[0]) && str[0] != '(')
@@ -119,10 +117,10 @@ public static class ParserForExpressions
         var index = open ? 1 : str.Length - 2;
         
         while (!char.IsDigit(str[index]) && str[index] != '-')
-            index = open ? index++ : index--;
+            index = open ? index + 1 : index - 1;
         
         var startIndex = open ? index : 0;
-        var length = open ? str.Length - index : str.Length - index - 1;
+        var length = open ? str.Length - index : index + 1;
         var maybeNumber = str.Substring(startIndex, length);
         if (!double.TryParse(maybeNumber, NumberStyles.Any, CultureInfo.InvariantCulture, out var p ))
             return new CalculationMathExpressionResultDto(MathErrorMessager.NotNumberMessage(maybeNumber));
