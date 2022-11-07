@@ -15,7 +15,7 @@ public class VisitorExprTree : ExpressionVisitor
                 => Calculate(node,
                     Visit((node as BinaryExpression).Left).Result,
                     Visit((node as BinaryExpression).Right).Result),
-                ExpressionType.Constant => Calculate(node)
+            _ => Calculate(node)
         };
 
     public CalculationMathExpressionResultDto Calculate(Expression expr, params double[] operands) =>
