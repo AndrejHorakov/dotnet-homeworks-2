@@ -1,6 +1,14 @@
 using System.Diagnostics.CodeAnalysis;
 using Hw9.Configuration;
 
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddMathCalculator();
+
+var app = builder.Build();
+
 namespace Hw9
 {
     public partial class Program
@@ -32,7 +40,6 @@ namespace Hw9
                 name: "default",
                 pattern: "{controller=Calculator}/{action=Calculator}/{id?}");
             app.Run();
-            
         }
     }
 }
