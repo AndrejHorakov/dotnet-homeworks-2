@@ -15,16 +15,9 @@ public class MathCalculatorService : IMathCalculatorService
         var preRes = await MatchWithTasks(members);
         var visitor = new VisitorExprTree();
         Task<CalculationMathExpressionResultDto> result;
-        if (preRes is BinaryExpression)
-        {
-            result = new Task<CalculationMathExpressionResultDto>(() =>
-                visitor.Visit(preRes));
-        }
-        else
-        {
-            result = new Task<CalculationMathExpressionResultDto>(() => 
-                new CalculationMathExpressionResultDto(visitor.Calculate(preRes as ConstantExpression).Result));
-        }
+        result = new Task<CalculationMathExpressionResultDto>(() =>
+            visitor.Visit(preRes));
+        
         result.Start();
         return await result;
     }
