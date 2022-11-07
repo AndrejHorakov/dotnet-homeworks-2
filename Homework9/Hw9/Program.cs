@@ -3,9 +3,10 @@ using Hw9.Configuration;
 
 namespace Hw9
 {
-    [ExcludeFromCodeCoverage]
+    
     public partial class Program
     {
+        [ExcludeFromCodeCoverage]
         static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
