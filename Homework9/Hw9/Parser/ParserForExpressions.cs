@@ -46,7 +46,7 @@ public static class ParserForExpressions
 
             if (expression[i] == ')')
             {
-                if (i - 1 >= 0 && IsOperation(expression[i-1]))
+                if (i - 1 > -1 && IsOperation(expression[i-1]))
                     return new CalculationMathExpressionResultDto(MathErrorMessager.
                         OperationBeforeParenthesisMessage(expression[i-1].ToString()));
                 bracketCounter--;
