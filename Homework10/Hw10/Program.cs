@@ -3,6 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using Hw10.Configuration;
 using Hw10.DbModels;
 using Microsoft.EntityFrameworkCore;
+[assembly: ExcludeFromCodeCoverage];
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
@@ -15,6 +16,7 @@ builder.Services.AddDbContext<ApplicationContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");

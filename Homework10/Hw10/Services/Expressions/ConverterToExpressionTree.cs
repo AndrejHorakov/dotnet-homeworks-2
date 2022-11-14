@@ -50,7 +50,7 @@ public static class ConverterToExpressionTree
         stackOperations.TryPop(out var lastOperation);
         stackExpr.TryPop(out var lastExpr1);
         stackExpr.TryPop(out var lastExpr2);
-        stackExpr.Push(ReturnExpression(lastExpr2, lastExpr1, lastOperation));
+        stackExpr.Push(ReturnExpression(lastExpr2!, lastExpr1!, lastOperation!));
     }
     
     private static Expression ReturnExpression(Expression left, Expression right, string operation) =>
