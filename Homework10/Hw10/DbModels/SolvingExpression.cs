@@ -13,4 +13,12 @@ public class SolvingExpression
 
 	[Required] 
 	public double Result { get; set; }
+
+	public SolvingExpression(string expression, double result)
+	{
+		Expression = expression;
+		Result = result;
+	}
+	
+	public SolvingExpression() {}
 }
