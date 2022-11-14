@@ -1,6 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using Hw9.Configuration;
-[assembly: ExcludeFromCodeCoverage];
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
