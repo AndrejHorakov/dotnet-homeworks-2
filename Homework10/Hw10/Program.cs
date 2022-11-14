@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using Hw10.Configuration;
 using Hw10.DbModels;
 using Microsoft.EntityFrameworkCore;
-[assembly: ExcludeFromCodeCoverage];
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
