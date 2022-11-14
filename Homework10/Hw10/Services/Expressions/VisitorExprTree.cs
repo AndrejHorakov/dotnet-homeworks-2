@@ -23,21 +23,17 @@ public class VisitorExpressionTree : ExpressionVisitor
         {
             ExpressionType.Add => operands[0].IsSuccess  && operands[1].IsSuccess ? 
                 new CalculationMathExpressionResultDto(operands[0].Result + operands[1].Result) :
-                ReturnErrorOperand(operands[0], operands[1]),
+                operands[1],
             ExpressionType.Subtract => operands[0].IsSuccess  && operands[1].IsSuccess ? 
                 new CalculationMathExpressionResultDto(operands[0].Result - operands[1].Result) :
-                ReturnErrorOperand(operands[0], operands[1]),
+                operands[1],
             ExpressionType.Multiply => operands[0].IsSuccess  && operands[1].IsSuccess ? 
                 new CalculationMathExpressionResultDto(operands[0].Result * operands[1].Result) :
-                ReturnErrorOperand(operands[0], operands[1]),
+                operands[1],
             ExpressionType.Divide =>
                 operands[1].Result != 0.0
                     ? new CalculationMathExpressionResultDto(operands[0].Result / operands[1].Result)
                     : new CalculationMathExpressionResultDto(MathErrorMessager.DivisionByZero),
             _ => new CalculationMathExpressionResultDto((double)(((((ConstantExpression)expr).Value)))!)
         };
-
-    private static CalculationMathExpressionResultDto ReturnErrorOperand(CalculationMathExpressionResultDto operand1,
-        CalculationMathExpressionResultDto operand2) =>
-        operand1.IsSuccess ? operand2 : operand1;
 }
