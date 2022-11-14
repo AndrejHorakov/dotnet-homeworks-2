@@ -62,6 +62,7 @@ public class IntegrationCalculatorControllerTests : IClassFixture<TestApplicatio
 	[InlineData("5 * 3 - 10 / (1 - 1)", MathErrorMessager.DivisionByZero)]
 	[InlineData("20 * 5 - 8 * 3 * 10 / (1 - 1)", MathErrorMessager.DivisionByZero)]
 	[InlineData("3 * 10 / (1 - 1)", MathErrorMessager.DivisionByZero)]
+	[InlineData("3 * 10 / (1 - 1) * 5", MathErrorMessager.DivisionByZero)]
 	[InlineData("(3 - 4 / 2.2.3) * 3", $"{MathErrorMessager.NotNumber} 2.2.3")]
 	[InlineData("3 - 4 / (-2.2.3) * 3", $"{MathErrorMessager.NotNumber} -2.2.3")]
 	[InlineData("2 - (2.23.1 - 23) * 2", $"{MathErrorMessager.NotNumber} 2.23.1")]

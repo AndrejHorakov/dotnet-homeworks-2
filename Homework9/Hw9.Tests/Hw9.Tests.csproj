@@ -21,8 +21,4 @@
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
     </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Hw9\Hw9.csproj" />
-    </ItemGroup>
 </Project>
