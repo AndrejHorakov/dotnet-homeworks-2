@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="233" TotalStatements="235" CoveragePercent="99" ReportType="DetailedXml" DotCoverVersion="2022.2.2">
+  <FileIndices>
+    <File Index="1" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3\Concurrency.cs" ChecksumAlgorithm="SHA256" Checksum="5CD1FFF460C98F291038E53D0CF853ACF30AB03A94DDF9F8EDC42E9A0F6F952F" />
+    <File Index="2" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3\Program.cs" ChecksumAlgorithm="SHA256" Checksum="1BD982121B1F47B1004DF0A43826B1F91802EA5A26503D077F017918B3CA5BD2" />
+    <File Index="3" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3\SingleInitializationSingleton.cs" ChecksumAlgorithm="SHA256" Checksum="1CE2066D7B6890BCC5B776EAB268277C90A84548E9BD0B84A7414A4F647E7694" />
+    <File Index="4" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3\StopWatcher.cs" ChecksumAlgorithm="SHA256" Checksum="CF027C9C32B2437C5B6771966EA836A140497CBCA66E26E552AF78838D2023CB" />
+    <File Index="5" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3\obj\Debug\net6.0\Hw3.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
+    <File Index="6" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="9203CF07D36B1AA135DA4A5F86286F34432156CBAF6518C2909849EB7D577381" />
+    <File Index="7" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3\obj\Debug\net6.0\Hw3.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A06FD8858BD120290ECE6AA370BFA22147F7F03982B42442BCD7AAF7E4BBB61C" />
+    <File Index="8" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3.Mutex\Program.cs" ChecksumAlgorithm="SHA256" Checksum="EF86F0C428C6A09A58E6AB5D7293A569D0CA58588C31863F7F56A128F7F12F1E" />
+    <File Index="9" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3.Mutex\WithMutex.cs" ChecksumAlgorithm="SHA256" Checksum="D88D2AB0364663079AB2AA531A87AA5AD99AAA47020E7E5777D941B2240C4CA6" />
+    <File Index="10" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3.Mutex\obj\Debug\net6.0\Hw3.Mutex.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
+    <File Index="11" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3.Mutex\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="9203CF07D36B1AA135DA4A5F86286F34432156CBAF6518C2909849EB7D577381" />
+    <File Index="12" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3.Mutex\obj\Debug\net6.0\Hw3.Mutex.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="7DE100A04FDA6D5045F74A1EDA0509FC112E70FF2C8639E503BE783B9D2454B7" />
+    <File Index="13" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3.Tests\ConcurrencyTests.cs" ChecksumAlgorithm="SHA256" Checksum="7AE6ECF6C4085146FEF5586668573623321AA03A62D715740ADDFD1BAA04655E" />
+    <File Index="14" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3.Tests\SingleInitializationSingletonTests.cs" ChecksumAlgorithm="SHA256" Checksum="C4B5905EA6CF94851FD2129DE5E19826EBF4C71B5FC3B2A56926376DE7D0A2E4" />
+    <File Index="15" Name="C:\Users\andre\.nuget\packages\microsoft.net.test.sdk\16.11.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
+    <File Index="16" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3.Tests\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="9203CF07D36B1AA135DA4A5F86286F34432156CBAF6518C2909849EB7D577381" />
+    <File Index="17" Name="D:\dotNetHW\dotnet-homeworks-2\Homework3\Hw3.Tests\obj\Debug\net6.0\Hw3.Tests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="0F13208DEB6A0DDD2A990BF0134AC5C9EDE61B802140115ACC4925A7129A6FCC" />
+  </FileIndices>
+  <Assembly Name="Hw3" CoveredStatements="125" TotalStatements="127" CoveragePercent="98">
+    <Namespace Name="Hw3" CoveredStatements="125" TotalStatements="127" CoveragePercent="98">
+      <Type Name="Concurrency" CoveredStatements="82" TotalStatements="82" CoveragePercent="100">
+        <Type Name="&lt;&gt;c" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+          <Method Name="&lt;DoIncrement&gt;b__11_0(System.Threading.Thread):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="1" Line="75" Column="30" EndLine="75" EndColumn="38" Covered="True" />
+          </Method>
+          <Method Name="&lt;Increment&gt;b__9_0():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="1" Line="45" Column="59" EndLine="45" EndColumn="67" Covered="True" />
+          </Method>
+          <Method Name="&lt;IncrementWithConcurrentDictionary&gt;b__10_0():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="1" Line="51" Column="19" EndLine="53" EndColumn="39" Covered="True" />
+          </Method>
+          <Method Name="&lt;IncrementWithConcurrentDictionary&gt;b__10_1(System.String):System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="1" Line="52" Column="29" EndLine="52" EndColumn="30" Covered="True" />
+          </Method>
+          <Method Name="&lt;IncrementWithConcurrentDictionary&gt;b__10_2(System.String,System.Int32):System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="1" Line="53" Column="33" EndLine="53" EndColumn="38" Covered="True" />
+          </Method>
+          <Method Name="&lt;IncrementWithInterlocked&gt;b__8_0():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+            <Statement FileIndex="1" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+            <Statement FileIndex="1" Line="39" Column="13" EndLine="39" EndColumn="47" Covered="True" />
+            <Statement FileIndex="1" Line="40" Column="9" EndLine="40" EndColumn="10" Covered="True" />
+          </Method>
+          <Method Name="&lt;IncrementWithLock&gt;b__7_0():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+            <Statement FileIndex="1" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
+            <Statement FileIndex="1" Line="28" Column="13" EndLine="28" EndColumn="26" Covered="True" />
+            <Statement FileIndex="1" Line="29" Column="13" EndLine="29" EndColumn="14" Covered="True" />
+            <Statement FileIndex="1" Line="30" Column="17" EndLine="30" EndColumn="26" Covered="True" />
+            <Statement FileIndex="1" Line="31" Column="13" EndLine="31" EndColumn="14" Covered="True" />
+            <Statement FileIndex="1" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass11_0" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Method Name="&lt;DoIncrement&gt;b__1():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+            <Statement FileIndex="1" Line="63" Column="13" EndLine="63" EndColumn="14" Covered="True" />
+            <Statement FileIndex="1" Line="64" Column="17" EndLine="64" EndColumn="33" Covered="True" />
+            <Statement FileIndex="1" Line="65" Column="22" EndLine="65" EndColumn="31" Covered="True" />
+            <Statement FileIndex="1" Line="66" Column="17" EndLine="66" EndColumn="18" Covered="True" />
+            <Statement FileIndex="1" Line="67" Column="21" EndLine="67" EndColumn="33" Covered="True" />
+            <Statement FileIndex="1" Line="68" Column="17" EndLine="68" EndColumn="18" Covered="True" />
+            <Statement FileIndex="1" Line="65" Column="49" EndLine="65" EndColumn="52" Covered="True" />
+            <Statement FileIndex="1" Line="65" Column="33" EndLine="65" EndColumn="47" Covered="True" />
+            <Statement FileIndex="1" Line="69" Column="13" EndLine="69" EndColumn="14" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass12_0" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+          <Type Name="&lt;&lt;IncrementAsync&gt;b__0&gt;d" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+            <Method Name="MoveNext():System.Void" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
+              <Statement FileIndex="1" Line="90" Column="13" EndLine="90" EndColumn="14" Covered="True" />
+              <Statement FileIndex="1" Line="91" Column="17" EndLine="91" EndColumn="33" Covered="True" />
+              <Statement FileIndex="1" Line="92" Column="22" EndLine="92" EndColumn="31" Covered="True" />
+              <Statement FileIndex="1" Line="93" Column="17" EndLine="93" EndColumn="18" Covered="True" />
+              <Statement FileIndex="1" Line="94" Column="21" EndLine="94" EndColumn="53" Covered="True" />
+              <Statement FileIndex="1" Line="95" Column="21" EndLine="95" EndColumn="44" Covered="True" />
+              <Statement FileIndex="1" Line="96" Column="21" EndLine="96" EndColumn="30" Covered="True" />
+              <Statement FileIndex="1" Line="97" Column="21" EndLine="97" EndColumn="44" Covered="True" />
+              <Statement FileIndex="1" Line="98" Column="21" EndLine="98" EndColumn="45" Covered="True" />
+              <Statement FileIndex="1" Line="99" Column="17" EndLine="99" EndColumn="18" Covered="True" />
+              <Statement FileIndex="1" Line="92" Column="49" EndLine="92" EndColumn="52" Covered="True" />
+              <Statement FileIndex="1" Line="92" Column="33" EndLine="92" EndColumn="47" Covered="True" />
+              <Statement FileIndex="1" Line="100" Column="13" EndLine="100" EndColumn="14" Covered="True" />
+            </Method>
+          </Type>
+        </Type>
+        <Type Name="&lt;IncrementAsync&gt;d__12" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+          <Method Name="MoveNext():System.Void" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+            <Statement FileIndex="1" Line="84" Column="5" EndLine="84" EndColumn="6" Covered="True" />
+            <Statement FileIndex="1" Line="85" Column="9" EndLine="85" EndColumn="20" Covered="True" />
+            <Statement FileIndex="1" Line="86" Column="9" EndLine="86" EndColumn="38" Covered="True" />
+            <Statement FileIndex="1" Line="87" Column="14" EndLine="87" EndColumn="23" Covered="True" />
+            <Statement FileIndex="1" Line="88" Column="9" EndLine="88" EndColumn="10" Covered="True" />
+            <Statement FileIndex="1" Line="89" Column="13" EndLine="100" EndColumn="16" Covered="True" />
+            <Statement FileIndex="1" Line="101" Column="13" EndLine="101" EndColumn="26" Covered="True" />
+            <Statement FileIndex="1" Line="102" Column="9" EndLine="102" EndColumn="10" Covered="True" />
+            <Statement FileIndex="1" Line="87" Column="40" EndLine="87" EndColumn="43" Covered="True" />
+            <Statement FileIndex="1" Line="87" Column="25" EndLine="87" EndColumn="38" Covered="True" />
+            <Statement FileIndex="1" Line="104" Column="9" EndLine="104" EndColumn="21" Covered="True" />
+            <Statement FileIndex="1" Line="105" Column="9" EndLine="105" EndColumn="35" Covered="True" />
+            <Statement FileIndex="1" Line="106" Column="9" EndLine="106" EndColumn="39" Covered="True" />
+            <Statement FileIndex="1" Line="107" Column="5" EndLine="107" EndColumn="6" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name=".cctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="1" Line="15" Column="5" EndLine="15" EndColumn="65" Covered="True" />
+          <Statement FileIndex="1" Line="17" Column="5" EndLine="17" EndColumn="68" Covered="True" />
+          <Statement FileIndex="1" Line="20" Column="5" EndLine="20" EndColumn="77" Covered="True" />
+          <Statement FileIndex="1" Line="22" Column="5" EndLine="22" EndColumn="51" Covered="True" />
+        </Method>
+        <Method Name="DoIncrement(System.Int32,System.Int32,System.Action):System.Int32" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
+          <Statement FileIndex="1" Line="57" Column="5" EndLine="57" EndColumn="6" Covered="True" />
+          <Statement FileIndex="1" Line="58" Column="9" EndLine="58" EndColumn="20" Covered="True" />
+          <Statement FileIndex="1" Line="59" Column="9" EndLine="59" EndColumn="42" Covered="True" />
+          <Statement FileIndex="1" Line="60" Column="14" EndLine="60" EndColumn="23" Covered="True" />
+          <Statement FileIndex="1" Line="61" Column="9" EndLine="61" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="62" Column="13" EndLine="69" EndColumn="40" Covered="True" />
+          <Statement FileIndex="1" Line="70" Column="13" EndLine="70" EndColumn="28" Covered="True" />
+          <Statement FileIndex="1" Line="71" Column="13" EndLine="71" EndColumn="23" Covered="True" />
+          <Statement FileIndex="1" Line="72" Column="9" EndLine="72" EndColumn="10" Covered="True" />
+          <Statement FileIndex="1" Line="60" Column="42" EndLine="60" EndColumn="45" Covered="True" />
+          <Statement FileIndex="1" Line="60" Column="25" EndLine="60" EndColumn="40" Covered="True" />
+          <Statement FileIndex="1" Line="74" Column="9" EndLine="74" EndColumn="21" Covered="True" />
+          <Statement FileIndex="1" Line="75" Column="9" EndLine="75" EndColumn="40" Covered="True" />
+          <Statement FileIndex="1" Line="76" Column="9" EndLine="76" EndColumn="41" Covered="True" />
+          <Statement FileIndex="1" Line="77" Column="5" EndLine="77" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="get_Index():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="1" Line="13" Column="32" EndLine="13" EndColumn="38" Covered="True" />
+        </Method>
+        <Method Name="Increment(System.Int32,System.Int32):System.Int32" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="1" Line="44" Column="5" EndLine="44" EndColumn="6" Covered="True" />
+          <Statement FileIndex="1" Line="45" Column="9" EndLine="45" EndColumn="69" Covered="True" />
+          <Statement FileIndex="1" Line="46" Column="5" EndLine="46" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="IncrementWithConcurrentDictionary(System.Int32,System.Int32):System.Int32" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="1" Line="49" Column="5" EndLine="49" EndColumn="6" Covered="True" />
+          <Statement FileIndex="1" Line="50" Column="9" EndLine="53" EndColumn="41" Covered="True" />
+          <Statement FileIndex="1" Line="54" Column="5" EndLine="54" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="IncrementWithInterlocked(System.Int32,System.Int32):System.Int32" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="1" Line="36" Column="5" EndLine="36" EndColumn="6" Covered="True" />
+          <Statement FileIndex="1" Line="37" Column="9" EndLine="40" EndColumn="12" Covered="True" />
+          <Statement FileIndex="1" Line="41" Column="5" EndLine="41" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="IncrementWithLock(System.Int32,System.Int32):System.Int32" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="1" Line="25" Column="5" EndLine="25" EndColumn="6" Covered="True" />
+          <Statement FileIndex="1" Line="26" Column="9" EndLine="32" EndColumn="12" Covered="True" />
+          <Statement FileIndex="1" Line="33" Column="5" EndLine="33" EndColumn="6" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="SingleInitializationSingleton" CoveredStatements="36" TotalStatements="38" CoveragePercent="95">
+        <Type Name="&lt;&gt;c" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;.cctor&gt;b__12_0():Hw3.SingleInitializationSingleton" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="3" Line="10" Column="19" EndLine="10" EndColumn="54" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass9_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Initialize&gt;b__0():Hw3.SingleInitializationSingleton" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="3" Line="49" Column="76" EndLine="49" EndColumn="116" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name=".cctor():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="9" Column="5" EndLine="10" EndColumn="56" Covered="True" />
+          <Statement FileIndex="3" Line="12" Column="5" EndLine="12" EndColumn="51" Covered="True" />
+          <Statement FileIndex="3" Line="14" Column="5" EndLine="14" EndColumn="57" Covered="True" />
+        </Method>
+        <Method Name=".ctor(System.Int32):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="3" Line="20" Column="5" EndLine="20" EndColumn="68" Covered="True" />
+          <Statement FileIndex="3" Line="21" Column="5" EndLine="21" EndColumn="6" Covered="True" />
+          <Statement FileIndex="3" Line="22" Column="9" EndLine="22" EndColumn="23" Covered="True" />
+          <Statement FileIndex="3" Line="24" Column="9" EndLine="24" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="25" Column="5" EndLine="25" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="get_Delay():System.Int32" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="18" Column="24" EndLine="18" EndColumn="28" Covered="True" />
+        </Method>
+        <Method Name="get_Instance():Hw3.SingleInitializationSingleton" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="59" Column="61" EndLine="59" EndColumn="77" Covered="True" />
+        </Method>
+        <Method Name="Initialize(System.Int32):System.Void" CoveredStatements="12" TotalStatements="14" CoveragePercent="86">
+          <Statement FileIndex="3" Line="42" Column="5" EndLine="42" EndColumn="6" Covered="True" />
+          <Statement FileIndex="3" Line="43" Column="9" EndLine="43" EndColumn="28" Covered="True" />
+          <Statement FileIndex="3" Line="44" Column="13" EndLine="44" EndColumn="51" Covered="True" />
+          <Statement FileIndex="3" Line="45" Column="9" EndLine="45" EndColumn="22" Covered="True" />
+          <Statement FileIndex="3" Line="46" Column="9" EndLine="46" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="47" Column="13" EndLine="47" EndColumn="33" Covered="True" />
+          <Statement FileIndex="3" Line="48" Column="13" EndLine="48" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="49" Column="17" EndLine="49" EndColumn="118" Covered="True" />
+          <Statement FileIndex="3" Line="50" Column="17" EndLine="50" EndColumn="39" Covered="True" />
+          <Statement FileIndex="3" Line="51" Column="13" EndLine="51" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="53" Column="13" EndLine="53" EndColumn="14" Covered="False" />
+          <Statement FileIndex="3" Line="54" Column="17" EndLine="54" EndColumn="55" Covered="False" />
+          <Statement FileIndex="3" Line="56" Column="9" EndLine="56" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="57" Column="5" EndLine="57" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="Reset():System.Void" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
+          <Statement FileIndex="3" Line="28" Column="5" EndLine="28" EndColumn="6" Covered="True" />
+          <Statement FileIndex="3" Line="29" Column="9" EndLine="29" EndColumn="29" Covered="True" />
+          <Statement FileIndex="3" Line="30" Column="13" EndLine="30" EndColumn="20" Covered="True" />
+          <Statement FileIndex="3" Line="31" Column="9" EndLine="31" EndColumn="22" Covered="True" />
+          <Statement FileIndex="3" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="33" Column="13" EndLine="33" EndColumn="32" Covered="True" />
+          <Statement FileIndex="3" Line="34" Column="13" EndLine="34" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="35" Column="17" EndLine="35" EndColumn="113" Covered="True" />
+          <Statement FileIndex="3" Line="36" Column="17" EndLine="36" EndColumn="40" Covered="True" />
+          <Statement FileIndex="3" Line="37" Column="13" EndLine="37" EndColumn="14" Covered="True" />
+          <Statement FileIndex="3" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="39" Column="5" EndLine="39" EndColumn="6" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="StopWatcher" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+        <Method Name="Stopwatch(System.Action):System.TimeSpan" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="4" Line="13" Column="5" EndLine="13" EndColumn="6" Covered="True" />
+          <Statement FileIndex="4" Line="14" Column="9" EndLine="14" EndColumn="34" Covered="True" />
+          <Statement FileIndex="4" Line="15" Column="9" EndLine="15" EndColumn="20" Covered="True" />
+          <Statement FileIndex="4" Line="16" Column="9" EndLine="16" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="17" Column="9" EndLine="17" EndColumn="19" Covered="True" />
+          <Statement FileIndex="4" Line="18" Column="9" EndLine="18" EndColumn="27" Covered="True" />
+          <Statement FileIndex="4" Line="19" Column="5" EndLine="19" EndColumn="6" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="Hw3.Mutex" CoveredStatements="20" TotalStatements="20" CoveragePercent="100">
+    <Namespace Name="Hw3.Mutex" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
+      <Type Name="WithMutex" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
+        <Method Name=".cctor():System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="9" Line="7" Column="5" EndLine="7" EndColumn="69" Covered="True" />
+        </Method>
+        <Method Name=".ctor():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="9" Line="17" Column="5" EndLine="17" EndColumn="23" Covered="True" />
+          <Statement FileIndex="9" Line="18" Column="5" EndLine="18" EndColumn="6" Covered="True" />
+          <Statement FileIndex="9" Line="19" Column="9" EndLine="19" EndColumn="63" Covered="True" />
+          <Statement FileIndex="9" Line="20" Column="9" EndLine="20" EndColumn="37" Covered="True" />
+          <Statement FileIndex="9" Line="21" Column="5" EndLine="21" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="Dispose():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="9" Line="32" Column="5" EndLine="32" EndColumn="6" Covered="True" />
+          <Statement FileIndex="9" Line="34" Column="9" EndLine="34" EndColumn="23" Covered="True" />
+          <Statement FileIndex="9" Line="36" Column="9" EndLine="36" EndColumn="35" Covered="True" />
+          <Statement FileIndex="9" Line="37" Column="5" EndLine="37" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="Increment():System.Int32" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="9" Line="24" Column="5" EndLine="24" EndColumn="6" Covered="True" />
+          <Statement FileIndex="9" Line="25" Column="9" EndLine="25" EndColumn="25" Covered="True" />
+          <Statement FileIndex="9" Line="26" Column="9" EndLine="26" EndColumn="29" Covered="True" />
+          <Statement FileIndex="9" Line="27" Column="9" EndLine="27" EndColumn="23" Covered="True" />
+          <Statement FileIndex="9" Line="28" Column="5" EndLine="28" EndColumn="6" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Type Name="Program" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+      <Method Name="&lt;Main&gt;$(System.String[]):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+        <Statement FileIndex="8" Line="5" Column="1" EndLine="5" EndColumn="99" Covered="True" />
+        <Statement FileIndex="8" Line="6" Column="1" EndLine="6" EndColumn="32" Covered="True" />
+        <Statement FileIndex="8" Line="7" Column="1" EndLine="7" EndColumn="107" Covered="True" />
+        <Statement FileIndex="8" Line="8" Column="1" EndLine="8" EndColumn="35" Covered="True" />
+        <Statement FileIndex="8" Line="9" Column="1" EndLine="9" EndColumn="107" Covered="True" />
+      </Method>
+    </Type>
+  </Assembly>
+  <Assembly Name="Hw3.Tests" CoveredStatements="88" TotalStatements="88" CoveragePercent="100">
+    <Namespace Name="Hw3.Tests" CoveredStatements="88" TotalStatements="88" CoveragePercent="100">
+      <Type Name="ConcurrencyTests" CoveredStatements="61" TotalStatements="61" CoveragePercent="100">
+        <Type Name="&lt;Mutex&gt;d__13" CoveredStatements="18" TotalStatements="18" CoveragePercent="100">
+          <Method Name="MoveNext():System.Void" CoveredStatements="18" TotalStatements="18" CoveragePercent="100">
+            <Statement FileIndex="13" Line="117" Column="5" EndLine="117" EndColumn="6" Covered="True" />
+            <Statement FileIndex="13" Line="118" Column="9" EndLine="121" EndColumn="11" Covered="True" />
+            <Statement FileIndex="13" Line="122" Column="9" EndLine="125" EndColumn="11" Covered="True" />
+            <Statement FileIndex="13" Line="127" Column="9" EndLine="127" EndColumn="34" Covered="True" />
+            <Statement FileIndex="13" Line="128" Column="9" EndLine="128" EndColumn="20" Covered="True" />
+            <Statement FileIndex="13" Line="129" Column="9" EndLine="129" EndColumn="20" Covered="True" />
+            <Statement FileIndex="13" Line="130" Column="9" EndLine="130" EndColumn="20" Covered="True" />
+            <Statement FileIndex="13" Line="131" Column="9" EndLine="131" EndColumn="37" Covered="True" />
+            <Statement FileIndex="13" Line="132" Column="9" EndLine="132" EndColumn="37" Covered="True" />
+            <Statement FileIndex="13" Line="133" Column="9" EndLine="133" EndColumn="26" Covered="True" />
+            <Statement FileIndex="13" Line="134" Column="9" EndLine="134" EndColumn="60" Covered="True" />
+            <Statement FileIndex="13" Line="135" Column="9" EndLine="135" EndColumn="29" Covered="True" />
+            <Statement FileIndex="13" Line="137" Column="9" EndLine="137" EndColumn="26" Covered="True" />
+            <Statement FileIndex="13" Line="138" Column="9" EndLine="138" EndColumn="56" Covered="True" />
+            <Statement FileIndex="13" Line="139" Column="9" EndLine="139" EndColumn="19" Covered="True" />
+            <Statement FileIndex="13" Line="140" Column="9" EndLine="140" EndColumn="29" Covered="True" />
+            <Statement FileIndex="13" Line="142" Column="8" EndLine="142" EndColumn="73" Covered="True" />
+            <Statement FileIndex="13" Line="143" Column="5" EndLine="143" EndColumn="6" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;SemaphoreSlimWithTasks&gt;d__10" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Method Name="MoveNext():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+            <Statement FileIndex="13" Line="96" Column="5" EndLine="96" EndColumn="6" Covered="True" />
+            <Statement FileIndex="13" Line="97" Column="9" EndLine="97" EndColumn="69" Covered="True" />
+            <Statement FileIndex="13" Line="98" Column="9" EndLine="98" EndColumn="51" Covered="True" />
+            <Statement FileIndex="13" Line="99" Column="5" EndLine="99" EndColumn="6" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name=".ctor(Xunit.Abstractions.ITestOutputHelper):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="13" Line="16" Column="5" EndLine="16" EndColumn="51" Covered="True" />
+          <Statement FileIndex="13" Line="17" Column="5" EndLine="17" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="18" Column="9" EndLine="18" EndColumn="20" Covered="True" />
+          <Statement FileIndex="13" Line="19" Column="5" EndLine="19" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="ConcurrentDictionary_100KIterations_WithInterlocked_NoRaces():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="13" Line="110" Column="5" EndLine="110" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="111" Column="9" EndLine="111" EndColumn="82" Covered="True" />
+          <Statement FileIndex="13" Line="112" Column="9" EndLine="112" EndColumn="51" Covered="True" />
+          <Statement FileIndex="13" Line="113" Column="5" EndLine="113" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="EightThreads_100KIterations_LockIsSyntaxSugarForMonitor_NoRaces():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="13" Line="53" Column="5" EndLine="53" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="54" Column="9" EndLine="54" EndColumn="66" Covered="True" />
+          <Statement FileIndex="13" Line="55" Column="9" EndLine="55" EndColumn="51" Covered="True" />
+          <Statement FileIndex="13" Line="56" Column="9" EndLine="56" EndColumn="78" Covered="True" />
+          <Statement FileIndex="13" Line="57" Column="5" EndLine="57" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="EightThreads_100KIterations_RaceIsReproduced():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="13" Line="37" Column="5" EndLine="37" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="38" Column="9" EndLine="38" EndColumn="58" Covered="True" />
+          <Statement FileIndex="13" Line="39" Column="9" EndLine="39" EndColumn="54" Covered="True" />
+          <Statement FileIndex="13" Line="40" Column="9" EndLine="40" EndColumn="78" Covered="True" />
+          <Statement FileIndex="13" Line="41" Column="5" EndLine="41" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="EightThreads_100KIterations_WithInterlocked_NoRaces():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="13" Line="61" Column="5" EndLine="61" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="62" Column="9" EndLine="62" EndColumn="73" Covered="True" />
+          <Statement FileIndex="13" Line="63" Column="9" EndLine="63" EndColumn="51" Covered="True" />
+          <Statement FileIndex="13" Line="64" Column="9" EndLine="64" EndColumn="78" Covered="True" />
+          <Statement FileIndex="13" Line="65" Column="5" EndLine="65" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="EightThreads_100KIterations_WithLock_NoRaces():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="13" Line="45" Column="5" EndLine="45" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="46" Column="9" EndLine="46" EndColumn="66" Covered="True" />
+          <Statement FileIndex="13" Line="47" Column="9" EndLine="47" EndColumn="51" Covered="True" />
+          <Statement FileIndex="13" Line="48" Column="9" EndLine="48" EndColumn="78" Covered="True" />
+          <Statement FileIndex="13" Line="49" Column="5" EndLine="49" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="FiveThreads_100Iterations_RaceIsHardToReproduce():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="13" Line="30" Column="5" EndLine="30" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="31" Column="9" EndLine="31" EndColumn="55" Covered="True" />
+          <Statement FileIndex="13" Line="32" Column="9" EndLine="32" EndColumn="51" Covered="True" />
+          <Statement FileIndex="13" Line="33" Column="5" EndLine="33" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="GetProcessStartInfo():System.Diagnostics.ProcessStartInfo" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="13" Line="146" Column="5" EndLine="146" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="147" Column="9" EndLine="154" EndColumn="11" Covered="True" />
+          <Statement FileIndex="13" Line="155" Column="5" EndLine="155" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="SingleThread_NoRaces():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="13" Line="23" Column="5" EndLine="23" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="24" Column="9" EndLine="24" EndColumn="55" Covered="True" />
+          <Statement FileIndex="13" Line="25" Column="9" EndLine="25" EndColumn="51" Covered="True" />
+          <Statement FileIndex="13" Line="26" Column="5" EndLine="26" EndColumn="6" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="SingleInitializationSingletonTests" CoveredStatements="27" TotalStatements="27" CoveragePercent="100">
+        <Type Name="&lt;&gt;c" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Method Name="&lt;CustomInitialization_ReturnsSingleInstance&gt;b__1_0():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+            <Statement FileIndex="14" Line="33" Column="9" EndLine="33" EndColumn="10" Covered="True" />
+            <Statement FileIndex="14" Line="34" Column="13" EndLine="34" EndColumn="60" Covered="True" />
+            <Statement FileIndex="14" Line="35" Column="13" EndLine="35" EndColumn="69" Covered="True" />
+            <Statement FileIndex="14" Line="36" Column="9" EndLine="36" EndColumn="10" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass0_0" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Method Name="&lt;DefaultInitialization_ReturnsSingleInstance&gt;b__0():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+            <Statement FileIndex="14" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+            <Statement FileIndex="14" Line="17" Column="13" EndLine="17" EndColumn="57" Covered="True" />
+            <Statement FileIndex="14" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name="CustomInitialization_ReturnsSingleInstance():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="14" Line="28" Column="5" EndLine="28" EndColumn="6" Covered="True" />
+          <Statement FileIndex="14" Line="29" Column="9" EndLine="29" EndColumn="47" Covered="True" />
+          <Statement FileIndex="14" Line="30" Column="9" EndLine="30" EndColumn="27" Covered="True" />
+          <Statement FileIndex="14" Line="31" Column="9" EndLine="31" EndColumn="57" Covered="True" />
+          <Statement FileIndex="14" Line="32" Column="9" EndLine="36" EndColumn="12" Covered="True" />
+          <Statement FileIndex="14" Line="38" Column="9" EndLine="38" EndColumn="93" Covered="True" />
+          <Statement FileIndex="14" Line="39" Column="9" EndLine="39" EndColumn="57" Covered="True" />
+          <Statement FileIndex="14" Line="40" Column="5" EndLine="40" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="DefaultInitialization_ReturnsSingleInstance():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="14" Line="12" Column="5" EndLine="12" EndColumn="6" Covered="True" />
+          <Statement FileIndex="14" Line="13" Column="9" EndLine="13" EndColumn="47" Covered="True" />
+          <Statement FileIndex="14" Line="14" Column="9" EndLine="14" EndColumn="50" Covered="True" />
+          <Statement FileIndex="14" Line="15" Column="9" EndLine="18" EndColumn="12" Covered="True" />
+          <Statement FileIndex="14" Line="20" Column="9" EndLine="20" EndColumn="57" Covered="True" />
+          <Statement FileIndex="14" Line="21" Column="9" EndLine="21" EndColumn="30" Covered="True" />
+          <Statement FileIndex="14" Line="23" Column="9" EndLine="23" EndColumn="60" Covered="True" />
+          <Statement FileIndex="14" Line="24" Column="5" EndLine="24" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="DoubleInitializationAttemptThrowsException():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="14" Line="44" Column="5" EndLine="44" EndColumn="6" Covered="True" />
+          <Statement FileIndex="14" Line="45" Column="9" EndLine="45" EndColumn="53" Covered="True" />
+          <Statement FileIndex="14" Line="46" Column="9" EndLine="49" EndColumn="12" Covered="True" />
+          <Statement FileIndex="14" Line="50" Column="5" EndLine="50" EndColumn="6" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>
