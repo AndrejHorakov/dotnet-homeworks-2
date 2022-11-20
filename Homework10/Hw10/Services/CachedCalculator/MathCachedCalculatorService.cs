@@ -20,7 +20,11 @@ public class MathCachedCalculatorService : IMathCalculatorService
 		var memorizedSolution = _dbContext.SolvingExpressions
 											.Where(x => x.Expression == expression);
 		if (memorizedSolution.Any())
+		{
+			await Task.Delay(1000);
 			return await Task.Run(() => new CalculationMathExpressionResultDto(memorizedSolution.First().Result));
+		}
+
 		var result = await _simpleCalculator.CalculateMathExpressionAsync(expression);
 		if (!result.IsSuccess) return result;
 		_dbContext.SolvingExpressions.Add(new SolvingExpression(expression!, result.Result));
