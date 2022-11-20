@@ -24,6 +24,10 @@ public class IntegrationCalculatorControllerTests : IClassFixture<WebApplication
 	[InlineData("3 - 4 / 2", "1")]
 	[InlineData("8 * (2 + 2) - 3 * 4", "20")]
 	[InlineData("10 - 3 * (-4)", "22")]
+	[InlineData("((2)) + 3", "5")]
+	[InlineData("((10 - 3) + 4) * ((-4) + 8)", "44")]
+	[InlineData("(((10 - 3) * 4) + 6) * (-4) + 8", "-128")]
+	[InlineData("10 - (3 + 4) * (6 + (7 - ((-4) * 3 + 8)))", "-109")]
 	public async Task Calculate_CalculateExpression_Success(string expression, string result)
 	{
 		var response = await CalculateAsync(expression);
@@ -48,6 +52,21 @@ public class IntegrationCalculatorControllerTests : IClassFixture<WebApplication
 	[InlineData("(10 - 2))", MathErrorMessager.IncorrectBracketsNumber)]
 	[InlineData("10 / 0", MathErrorMessager.DivisionByZero)]
 	[InlineData("10 / (1 - 1)", MathErrorMessager.DivisionByZero)]
+	[InlineData("((10.2.8) - 2)", $"{MathErrorMessager.NotNumber} 10.2.8")]
+	[InlineData("(10.2.8 - 2)", $"{MathErrorMessager.NotNumber} 10.2.8")]
+	[InlineData(")10 - 2))", MathErrorMessager.IncorrectBracketsNumber)]
+	[InlineData("3 * 5 * 6 - 10 / (1 - 1)", MathErrorMessager.DivisionByZero)]
+	[InlineData("5 - 10 / (25 - 5 * 5)", MathErrorMessager.DivisionByZero)]
+	[InlineData("38 + 2 * 5 - 10 / (1 - 1)", MathErrorMessager.DivisionByZero)]
+	[InlineData("5 + 10 / (1 - 1)", MathErrorMessager.DivisionByZero)]
+	[InlineData("5 * 3 - 10 / (1 - 1)", MathErrorMessager.DivisionByZero)]
+	[InlineData("20 * 5 - 8 * 3 * 10 / (1 - 1)", MathErrorMessager.DivisionByZero)]
+	[InlineData("3 * 10 / (1 - 1)", MathErrorMessager.DivisionByZero)]
+	[InlineData("3 * 10 / (1 - 1) * 5", MathErrorMessager.DivisionByZero)]
+	[InlineData("(3 - 4 / 2.2.3) * 3", $"{MathErrorMessager.NotNumber} 2.2.3")]
+	[InlineData("3 - 4 / (-2.2.3) * 3", $"{MathErrorMessager.NotNumber} -2.2.3")]
+	[InlineData("2 - (2.23.1 - 23) * 2", $"{MathErrorMessager.NotNumber} 2.23.1")]
+	[InlineData(")10 - 2)((", MathErrorMessager.IncorrectBracketsNumber)]
 	public async Task Calculate_CalculateExpression_Error(string expression, string result)
 	{
 		var response = await CalculateAsync(expression);
