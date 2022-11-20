@@ -24,7 +24,7 @@ public class VisitorExpressionTree : ExpressionVisitor
     {
         _dictionary.Add(node,
             new Lazy<Task<CalculationMathExpressionResultDto>>(async () => 
-            new CalculationMathExpressionResultDto((double)node.Value!)));
+            Calculate(node,new CalculationMathExpressionResultDto((double)node.Value!))));
             return base.VisitConstant(node);
     }
 
@@ -46,7 +46,7 @@ public class VisitorExpressionTree : ExpressionVisitor
                 operands[1].Result != 0.0
                     ? new CalculationMathExpressionResultDto(operands[0].Result / operands[1].Result)
                     : new CalculationMathExpressionResultDto(MathErrorMessager.DivisionByZero),
-            _ => new CalculationMathExpressionResultDto((double)(((((ConstantExpression)expr).Value)))!)
+            _ => new CalculationMathExpressionResultDto((double)((ConstantExpression)expr).Value!)
         };
     }
 
