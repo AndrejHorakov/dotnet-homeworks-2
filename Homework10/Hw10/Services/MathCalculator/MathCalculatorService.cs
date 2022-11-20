@@ -16,9 +16,7 @@ public class MathCalculatorService : IMathCalculatorService
           if (!parseResult.IsSuccess) 
               return parseResult;
           var expressionTree = ConverterToExpressionTree.Convert(members);
-          var result = VisitorExpressionTree.Visit(expressionTree);
-          if (result.IsSuccess)
-              await Task.Delay(1000);
-          return result; 
+          var result = new VisitorExpressionTree().MyVisit(expressionTree);
+          return await result[expressionTree].Value;
       }
 }
