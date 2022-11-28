@@ -1,43 +1,57 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{ACFCEFF7-8C3B-4D05-8080-DD19A6E07873}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-	EndProjectSection
+    ProjectSection(SolutionItems) = preProject
+        README.md = README.md
+    EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "actions", "actions", "{82BA388F-4AE2-43A2-965A-AC2092BF26F3}"
-	ProjectSection(SolutionItems) = preProject
-					.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
-					.github\workflows\test-reporter.yml = .github\workflows\test-reporter.yml
-					.github\workflows\Plagiarism_detector.yml = .github\workflows\Plagiarism_detector.yml
-					.github\coverlet.runsettings = .github\coverlet.runsettings
-	EndProjectSection
+    ProjectSection(SolutionItems) = preProject
+        .github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+        .github\workflows\test-reporter.yml = .github\workflows\test-reporter.yml
+        .github\workflows\Plagiarism_detector.yml = .github\workflows\Plagiarism_detector.yml
+        .github\coverlet.runsettings = .github\coverlet.runsettings
+    EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework11", "Homework11", "{E23FEF3D-D7C9-4FF6-AFB2-2CFF382F35D5}"
-	ProjectSection(SolutionItems) = preProject
-		Homework11\README.md = Homework11\README.md
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework12", "Homework12", "{F76958C8-AD2F-4006-80AF-D7A466020AD3}"
+    ProjectSection(SolutionItems) = preProject
+        Homework12\README.md = Homework12\README.md
+    EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw11Tests", "Homework11\Hw11.Tests\Hw11Tests.csproj", "{B4F60DFD-034F-4205-BC6B-692F276B414B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw12", "Homework12\Hw12\Hw12.csproj", "{93E929A3-EF7A-481E-94C2-47AEB416A7A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw11", "Homework11\Hw11\Hw11.csproj", "{D3503703-6227-4A49-A937-F20DB5BAD636}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Hw5", "Homework12\Hw5\Hw5.fsproj", "{D0CC916B-5ED8-458F-937F-AFF925C35479}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Hw6", "Homework12\Hw6\Hw6.fsproj", "{B35EF5A9-0737-4208-AA56-3A8563731F8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw8", "Homework12\Hw8\Hw8.csproj", "{FE5B37AD-ABD8-4FE6-BAF3-550445BE7C6C}"
 EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B4F60DFD-034F-4205-BC6B-692F276B414B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4F60DFD-034F-4205-BC6B-692F276B414B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4F60DFD-034F-4205-BC6B-692F276B414B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4F60DFD-034F-4205-BC6B-692F276B414B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D3503703-6227-4A49-A937-F20DB5BAD636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3503703-6227-4A49-A937-F20DB5BAD636}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3503703-6227-4A49-A937-F20DB5BAD636}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3503703-6227-4A49-A937-F20DB5BAD636}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{B4F60DFD-034F-4205-BC6B-692F276B414B} = {E23FEF3D-D7C9-4FF6-AFB2-2CFF382F35D5}
-		{D3503703-6227-4A49-A937-F20DB5BAD636} = {E23FEF3D-D7C9-4FF6-AFB2-2CFF382F35D5}
-	EndGlobalSection
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {93E929A3-EF7A-481E-94C2-47AEB416A7A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {93E929A3-EF7A-481E-94C2-47AEB416A7A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {93E929A3-EF7A-481E-94C2-47AEB416A7A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {93E929A3-EF7A-481E-94C2-47AEB416A7A9}.Release|Any CPU.Build.0 = Release|Any CPU
+        {D0CC916B-5ED8-458F-937F-AFF925C35479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {D0CC916B-5ED8-458F-937F-AFF925C35479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {D0CC916B-5ED8-458F-937F-AFF925C35479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {D0CC916B-5ED8-458F-937F-AFF925C35479}.Release|Any CPU.Build.0 = Release|Any CPU
+        {B35EF5A9-0737-4208-AA56-3A8563731F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {B35EF5A9-0737-4208-AA56-3A8563731F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {B35EF5A9-0737-4208-AA56-3A8563731F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {B35EF5A9-0737-4208-AA56-3A8563731F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+        {FE5B37AD-ABD8-4FE6-BAF3-550445BE7C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {FE5B37AD-ABD8-4FE6-BAF3-550445BE7C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {FE5B37AD-ABD8-4FE6-BAF3-550445BE7C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {FE5B37AD-ABD8-4FE6-BAF3-550445BE7C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(NestedProjects) = preSolution
+        {93E929A3-EF7A-481E-94C2-47AEB416A7A9} = {F76958C8-AD2F-4006-80AF-D7A466020AD3}
+        {D0CC916B-5ED8-458F-937F-AFF925C35479} = {F76958C8-AD2F-4006-80AF-D7A466020AD3}
+        {B35EF5A9-0737-4208-AA56-3A8563731F8D} = {F76958C8-AD2F-4006-80AF-D7A466020AD3}
+        {FE5B37AD-ABD8-4FE6-BAF3-550445BE7C6C} = {F76958C8-AD2F-4006-80AF-D7A466020AD3}
+    EndGlobalSection
 EndGlobal
