@@ -24,8 +24,4 @@
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Hw5\Hw5.fsproj" />
-    </ItemGroup>
 </Project>
