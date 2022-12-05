@@ -1,0 +1,157 @@
+Результаты запуска "Run All Tests from solution Under DotMemory Unit":
+
+473150553
+27495
+
+Результаты Benchmark:
+
+Mean = 148.053 ns, StdErr = 0.842 ns (0.57%), N = 37, StdDev = 5.120 ns
+Min = 138.384 ns, Q1 = 144.332 ns, Median = 147.221 ns, Q3 = 150.645 ns, Max = 159.709 ns
+IQR = 6.312 ns, LowerFence = 134.864 ns, UpperFence = 160.113 ns
+ConfidenceInterval = [145.038 ns; 151.069 ns] (CI 99.9%), Margin = 3.015 ns (2.04% of Mean)
+Skewness = 0.55, Kurtosis = 2.59, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\Hw13.MemoryTests-report.csv
+  BenchmarkDotNet.Artifacts\results\Hw13.MemoryTests-report-github.md
+  BenchmarkDotNet.Artifacts\results\Hw13.MemoryTests-report.html
+
+// * Detailed results *
+MemoryTests.Simple: DefaultJob
+Runtime = .NET 6.0.2 (6.0.222.6406), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 18.126 ns, StdErr = 0.090 ns (0.50%), N = 21, StdDev = 0.414 ns
+Min = 17.430 ns, Q1 = 17.959 ns, Median = 18.140 ns, Q3 = 18.356 ns, Max = 19.199 ns
+IQR = 0.397 ns, LowerFence = 17.364 ns, UpperFence = 18.950 ns
+ConfidenceInterval = [17.778 ns; 18.474 ns] (CI 99.9%), Margin = 0.348 ns (1.92% of Mean)
+Skewness = 0.46, Kurtosis = 3.18, MValue = 2
+-------------------- Histogram --------------------
+[17.359 ns ; 17.753 ns) | @@@@@
+[17.753 ns ; 18.316 ns) | @@@@@@@@@@
+[18.316 ns ; 18.728 ns) | @@@@@
+[18.728 ns ; 19.396 ns) | @
+---------------------------------------------------
+
+MemoryTests.Virtual: DefaultJob
+Runtime = .NET 6.0.2 (6.0.222.6406), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 18.771 ns, StdErr = 0.087 ns (0.46%), N = 15, StdDev = 0.337 ns
+Min = 18.328 ns, Q1 = 18.545 ns, Median = 18.719 ns, Q3 = 18.962 ns, Max = 19.527 ns
+IQR = 0.417 ns, LowerFence = 17.919 ns, UpperFence = 19.587 ns
+ConfidenceInterval = [18.411 ns; 19.131 ns] (CI 99.9%), Margin = 0.360 ns (1.92% of Mean)
+Skewness = 0.47, Kurtosis = 2.44, MValue = 2
+-------------------- Histogram --------------------
+[18.273 ns ; 18.992 ns) | @@@@@@@@@@@@
+[18.992 ns ; 19.706 ns) | @@@
+---------------------------------------------------
+
+MemoryTests.Static: DefaultJob
+Runtime = .NET 6.0.2 (6.0.222.6406), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 18.650 ns, StdErr = 0.105 ns (0.56%), N = 85, StdDev = 0.967 ns
+Min = 17.400 ns, Q1 = 17.951 ns, Median = 18.476 ns, Q3 = 19.060 ns, Max = 22.034 ns
+IQR = 1.109 ns, LowerFence = 16.287 ns, UpperFence = 20.724 ns
+ConfidenceInterval = [18.293 ns; 19.008 ns] (CI 99.9%), Margin = 0.358 ns (1.92% of Mean)
+Skewness = 1.21, Kurtosis = 4.37, MValue = 2
+-------------------- Histogram --------------------
+[17.111 ns ; 17.677 ns) | @@@@@@@@
+[17.677 ns ; 18.255 ns) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[18.255 ns ; 19.171 ns) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[19.171 ns ; 19.748 ns) | @@@@@@@@@@@
+[19.748 ns ; 20.424 ns) | @@@@@@
+[20.424 ns ; 21.277 ns) | @@
+[21.277 ns ; 22.099 ns) | @@
+---------------------------------------------------
+
+MemoryTests.Generic: DefaultJob
+Runtime = .NET 6.0.2 (6.0.222.6406), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 21.572 ns, StdErr = 0.125 ns (0.58%), N = 32, StdDev = 0.706 ns
+Min = 20.082 ns, Q1 = 21.074 ns, Median = 21.489 ns, Q3 = 21.945 ns, Max = 23.177 ns
+IQR = 0.870 ns, LowerFence = 19.769 ns, UpperFence = 23.250 ns
+ConfidenceInterval = [21.118 ns; 22.026 ns] (CI 99.9%), Margin = 0.454 ns (2.10% of Mean)
+Skewness = 0.42, Kurtosis = 2.62, MValue = 2
+-------------------- Histogram --------------------
+[19.790 ns ; 20.374 ns) | @
+[20.374 ns ; 21.026 ns) | @@@@@
+[21.026 ns ; 21.610 ns) | @@@@@@@@@@@@@@@
+[21.610 ns ; 22.445 ns) | @@@@@@@
+[22.445 ns ; 23.186 ns) | @@@@
+---------------------------------------------------
+
+MemoryTests.Dynamic: DefaultJob
+Runtime = .NET 6.0.2 (6.0.222.6406), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 35.000 ns, StdErr = 0.182 ns (0.52%), N = 27, StdDev = 0.945 ns
+Min = 33.092 ns, Q1 = 34.353 ns, Median = 34.867 ns, Q3 = 35.642 ns, Max = 37.509 ns
+IQR = 1.290 ns, LowerFence = 32.418 ns, UpperFence = 37.577 ns
+ConfidenceInterval = [34.326 ns; 35.675 ns] (CI 99.9%), Margin = 0.674 ns (1.93% of Mean)
+Skewness = 0.41, Kurtosis = 3.09, MValue = 2
+-------------------- Histogram --------------------
+[33.022 ns ; 33.952 ns) | @@
+[33.952 ns ; 35.164 ns) | @@@@@@@@@@@@@
+[35.164 ns ; 35.991 ns) | @@@@@@@@@@
+[35.991 ns ; 36.925 ns) | @
+[36.925 ns ; 37.923 ns) | @
+---------------------------------------------------
+
+MemoryTests.Reflection: DefaultJob
+Runtime = .NET 6.0.2 (6.0.222.6406), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 148.053 ns, StdErr = 0.842 ns (0.57%), N = 37, StdDev = 5.120 ns
+Min = 138.384 ns, Q1 = 144.332 ns, Median = 147.221 ns, Q3 = 150.645 ns, Max = 159.709 ns
+IQR = 6.312 ns, LowerFence = 134.864 ns, UpperFence = 160.113 ns
+ConfidenceInterval = [145.038 ns; 151.069 ns] (CI 99.9%), Margin = 3.015 ns (2.04% of Mean)
+Skewness = 0.55, Kurtosis = 2.59, MValue = 2
+-------------------- Histogram --------------------
+[136.367 ns ; 140.060 ns) | @
+[140.060 ns ; 143.912 ns) | @@@@@
+[143.912 ns ; 147.946 ns) | @@@@@@@@@@@@@@@@
+[147.946 ns ; 152.821 ns) | @@@@@@@
+[152.821 ns ; 157.404 ns) | @@@@@@
+[157.404 ns ; 161.726 ns) | @@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19044.2251 (21H2)
+AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 1 CPU, 8 logical and 4 physical cores
+.NET SDK=6.0.200
+  [Host]     : .NET 6.0.2 (6.0.222.6406), X64 RyuJIT
+  DefaultJob : .NET 6.0.2 (6.0.222.6406), X64 RyuJIT
+
+
+|     Method |      Mean |    Error |   StdDev |    Median |       Min |       Max |  Gen 0 | Allocated |
+|----------- |----------:|---------:|---------:|----------:|----------:|----------:|-------:|----------:|
+|     Simple |  18.13 ns | 0.348 ns | 0.414 ns |  18.14 ns |  17.43 ns |  19.20 ns | 0.0229 |      48 B |
+|    Virtual |  18.77 ns | 0.360 ns | 0.337 ns |  18.72 ns |  18.33 ns |  19.53 ns | 0.0229 |      48 B |
+|     Static |  18.65 ns | 0.358 ns | 0.967 ns |  18.48 ns |  17.40 ns |  22.03 ns | 0.0229 |      48 B |
+|    Generic |  21.57 ns | 0.454 ns | 0.706 ns |  21.49 ns |  20.08 ns |  23.18 ns | 0.0229 |      48 B |
+|    Dynamic |  35.00 ns | 0.674 ns | 0.945 ns |  34.87 ns |  33.09 ns |  37.51 ns | 0.0229 |      48 B |
+| Reflection | 148.05 ns | 3.015 ns | 5.120 ns | 147.22 ns | 138.38 ns | 159.71 ns | 0.0381 |      80 B |
+
+// * Hints *
+Outliers
+  MemoryTests.Simple: Default     -> 6 outliers were removed (22.74 ns..27.21 ns)
+  MemoryTests.Virtual: Default    -> 2 outliers were removed (21.73 ns, 21.77 ns)
+  MemoryTests.Static: Default     -> 15 outliers were removed (24.33 ns..26.92 ns)
+  MemoryTests.Generic: Default    -> 1 outlier  was  removed (25.42 ns)
+  MemoryTests.Reflection: Default -> 1 outlier  was  removed (166.48 ns)
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Median    : Value separating the higher half of all measurements (50th percentile)
+  Min       : Minimum
+  Max       : Maximum
+  Gen 0     : GC Generation 0 collects per 1000 operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ns      : 1 Nanosecond (0.000000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:03:45 (225.49 sec), executed benchmarks: 6
+
+Global total time: 00:03:51 (231.25 sec), executed benchmarks: 6
+// * Artifacts cleanup *
+

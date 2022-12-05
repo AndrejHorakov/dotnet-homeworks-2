@@ -8,8 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="BenchmarkDotNet" Version="0.13.2" />
-      <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.11" />
+      <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+      <PackageReference Include="JetBrains.dotMemoryUnit" Version="3.2.20220510" />
     </ItemGroup>
 
     <ItemGroup>

@@ -1,7 +1,7 @@
-using Hw10.DbModels;
 using Hw10.Services;
 using Hw10.Services.CachedCalculator;
 using Hw10.Services.MathCalculator;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace Hw10.Configuration;
 
@@ -16,7 +16,7 @@ public static class ServiceCollectionExtensions
     {
         return services.AddScoped<IMathCalculatorService>(s =>
             new MathCachedCalculatorService(
-                s.GetRequiredService<ApplicationContext>(), 
+                s.GetRequiredService<IMemoryCache>(), 
                 s.GetRequiredService<MathCalculatorService>()));
     }
 }
